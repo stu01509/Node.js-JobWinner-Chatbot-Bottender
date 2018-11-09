@@ -1,7 +1,7 @@
 const btdc = require('bottender-compose');
 
 module.exports = btdc.series([
-  btdc.sendText('以下幾個求職平台給你參考'), 
+  btdc.sendText('以下幾個求職平台給你參考'),
   btdc.sendGenericTemplate(
     [
       {
@@ -64,7 +64,7 @@ module.exports = btdc.series([
             title: '立即前往',
             url: 'https://www.104.com.tw/jobs/main/',
             webview_height_ratio: 'full',
-          }
+          },
         ],
       },
       {
@@ -76,10 +76,10 @@ module.exports = btdc.series([
             title: '立即前往',
             url: 'https://www.1111.com.tw/',
             webview_height_ratio: 'full',
-          }
+          },
         ],
       },
     ],
-    { image_aspect_ratio: 'horizontal' }
+    { image_aspect_ratio: 'horizontal' },
   ),
 ]);
