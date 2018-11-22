@@ -18,7 +18,7 @@ function checkTime() {
 }
 
 module.exports = btdc.series([
-  btdc.sendText(`${checkTime()} 歡迎使用 求職溫拿🎉`),
+  btdc.sendText(() => `${checkTime()} 歡迎使用 求職溫拿🎉`),
   btdc.sendText('提供求職上各種的工作資訊，還有簡單的性向小測驗，讓你快速了解你自己.'),
   btdc.sendButtonTemplate(
     '需要什麼服務呢？',
